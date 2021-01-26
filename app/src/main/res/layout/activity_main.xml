@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#653636"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/header_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="33dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_settings_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/rave_logo"
+            android:textAlignment="center"
+
+
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_people_alt_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/golge"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header_homepage"
+        android:background="@drawable/drop_shadow"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/golge"
+        android:layout_marginTop="5dp"
+        android:elevation="33dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_language_24" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Public"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/baslik"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/baslik"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape"
+                android:layout_height="90dp"
+
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="107dp"
+                    android:layout_height="match_parent"
+                    android:outlineSpotShadowColor="#0000"
+                    app:cardBackgroundColor="#0000"
+                    app:cardCornerRadius="111dp"
+
+                    app:contentPaddingRight="20dp">
+
+
+                    <ImageView
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:background="#0000"
+                        android:minWidth="200dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/video_youtube" />
+                </androidx.cardview.widget.CardView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Youtube video başlığı"
+                        android:textColor="@color/white"
+                        android:paddingTop="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_baseline_account_circle_24"
+                            android:layout_gravity="center"
+                            />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/ic_baseline_account_circle_24"
+                            android:layout_gravity="center"
+                            /><ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        android:layout_gravity="center"
+                        /><ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        android:layout_gravity="center"
+                        /><ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        android:layout_gravity="center"
+                        />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

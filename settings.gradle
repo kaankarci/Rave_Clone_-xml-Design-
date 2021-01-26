@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Rave_Clone_v1"
